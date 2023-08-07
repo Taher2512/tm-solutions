@@ -1,11 +1,42 @@
 "use client";
-import React from 'react'
+import React,{useState} from 'react'
 import HeaderText from "./HeaderText";
 import EmailIcon from '@mui/icons-material/Email';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 export default function Contact() {
+    const [name, setname] = useState()
+    const [email, setemail] = useState()
+    const [subject, setsubject] = useState()
+    const [description, setdescription] = useState()
+    const sendData=async()=>{
+        if(!name || !email || !subject){
+           alert("All marked fields are required")
+        }
+        else{
+             fetch('http://localhost:3000/api/contact',{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify({
+                    name,
+                    email,
+                    subject,
+                    description
+                })
+            }).then((res)=>{
+                console.log(res)
+                alert("Message sent successfully we will get back to you soon,Thank You.")
+                setname('')
+            setemail('')
+            setdescription('')
+            setsubject('')
+            })
+            
+        }
+    }
   return (
     <section className='justify-center flex-col flex'>
    <HeaderText text={"Contact Us"}></HeaderText>
@@ -25,13 +56,13 @@ export default function Contact() {
          Send us a message 🚀
         </h1> 
         <div className='flex-col w-100'>
-       <div><TextField margin='normal' fullWidth id="outlined-basic"  label="Full name*" size='30' multiline variant="outlined" /></div>
-        <div><TextField margin='normal' fullWidth id="outlined-basic" label="Email Address*" size='30' multiline variant="outlined" /></div>
-       <div><TextField margin='normal' fullWidth id="outlined-basic" label="Subject*" size='30' multiline variant="outlined" /></div>
-       <div><TextField margin='normal' fullWidth rows={6} id="outlined-basic" label="Tell us more about your project" size='30' multiline variant="outlined" /></div>
+       <div><TextField   value={name} onChange={(e)=>{setname(e.target.value)}}  margin='normal' fullWidth id="outlined-basic"  label="Full name*" size='30' multiline variant="outlined" /></div>
+        <div><TextField  value={email} onChange={(e)=>{setemail(e.target.value)}}  margin='normal' fullWidth id="outlined-basic" label="Email Address*" size='30' multiline variant="outlined" /></div>
+       <div><TextField  value={subject} onChange={(e)=>{setsubject(e.target.value)}} margin='normal'   fullWidth id="outlined-basic" label="Subject*" size='30' multiline variant="outlined" /></div>
+       <div><TextField value={description} onChange={(e)=>{setdescription(e.target.value)}} margin='normal' fullWidth rows={6} id="outlined-basic" label="Tell us more about your project" size='30' multiline variant="outlined" /></div>
         </div>
         <div className='flex justify-center'>
-        <Button variant="contained" className="w-1/2 my-3  h-12 bg-[#0066b2] border-[#0066b2] border-2 mx-4 rounded-md text-base font-semibold text-[#fff] transition-all" endIcon={<SendIcon/>}>Send Message</Button>
+        <Button variant="contained" onClick={sendData} className="w-1/2 my-3  h-12 bg-[#0066b2] border-[#0066b2] border-2 mx-4 rounded-md text-base font-semibold text-[#fff] transition-all" endIcon={<SendIcon/>}>Send Message</Button>
         </div>
         </div>
    </div>
