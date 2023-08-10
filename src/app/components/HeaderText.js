@@ -16,7 +16,7 @@ const HeaderText = ({ text }) => {
   return (
     <div ref={ref} className="flex flex-col self-center justify-center w-max">
       {/* h1 - Border Bottom Will change width from 0-50% then shrink 50-100% with framer */}
-      <h1 className="text-5xl font-extrabold pb-5">{text}</h1>
+      <h1 className="text-5xl font-extrabold pb-5 text-[#002D62]">{text}</h1>
       <motion.div
         className="border-2 border-[#0066b2] rounded-lg"
         style={{ width }}
