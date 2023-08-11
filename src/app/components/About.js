@@ -7,7 +7,7 @@ import HeaderText from "./HeaderText";
 
 const About = () => {
   return (
-    <section className="flex flex-col justify-center">
+    <section id="about" className="flex flex-col justify-center mb-24">
       <HeaderText text={"About Us"} />
       <div className="px-52 py-16">
         <div className="grid grid-cols-12 gap-4">
@@ -16,18 +16,20 @@ const About = () => {
               src={"/profile/taher.jpg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer border-4 border-[#0066b2]"
+              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
             />
           </div>
           <div className="col-span-9 flex items-center">
-            <span className="text-4xl font-bold">Taher Khasamwala</span>
+            <span className="text-4xl font-bold text-[#002D62]">
+              Taher Khasamwala
+            </span>
           </div>
           <div className="col-span-4">
             <div className="relative w-full h-full">
               <Image src={"/images/arrow-right.png"} alt="arrow-right" fill />
             </div>
           </div>
-          <span className="col-span-8 text-justify border-4 border-[#0066b2] rounded-md p-8 font-semibold">
+          <span className="col-span-8 text-justify border-4 border-[#002D62] rounded-md p-8 font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             tincidunt velit nunc, sed ultricies tellus interdum vitae.
             Suspendisse potenti. Sed efficitur magna nisl, at varius mauris
@@ -41,17 +43,19 @@ const About = () => {
 
         <div className="grid grid-cols-12 gap-4 mt-16">
           <div className="col-span-9 flex items-center justify-end">
-            <span className="text-4xl font-bold">Mustafa Chaiwala</span>
+            <span className="text-4xl font-bold text-[#002D62]">
+              Mustafa Chaiwala
+            </span>
           </div>
           <div className="col-span-3 relative w-64 h-64 flex justify-end">
             <Image
               src={"/profile/mustafa.jpeg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer border-4 border-[#0066b2]"
+              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
             />
           </div>
-          <span className="col-span-8 text-justify border-4 border-[#0066b2] rounded-md p-8 font-semibold">
+          <span className="col-span-8 text-justify border-4 border-[#002D62] rounded-md p-8 font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             tincidunt velit nunc, sed ultricies tellus interdum vitae.
             Suspendisse potenti. Sed efficitur magna nisl, at varius mauris

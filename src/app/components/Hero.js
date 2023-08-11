@@ -8,21 +8,23 @@ const Hero = () => {
   return (
     <section className="flex items-center align-middle justify-between px-10 min-h-screen">
       <div className="mx-10">
-        <h1 className="text-[#0066b2] text-6xl text-bol font-extrabold leading-snug">
+        <h1 className="text-[#002D62] text-6xl text-bol font-extrabold leading-snug">
           Unleashing Digital Potential By Crafting High-Converting Apps
         </h1>
         <div className="flex items-center justify-center mt-10 h-16">
           <Button
             variant="contained"
             startIcon={<CallIcon className="w-7 h-7" />}
-            className="w-1/2 h-12 bg-[#0066b2] border-[#0066b2] border-2 mx-4 rounded-md text-base font-semibold text-[#fff] transition-all  hover:shadow-2xl hover:shadow-[#0066b2] hover:-mt-2"
+            href="#contact"
+            className="w-1/2 h-12 bg-[#002D62] border-[#002D62] hover:bg-[#002D62] border-2 mx-4 rounded-md text-base font-semibold text-[#fff] transition-all  hover:shadow-2xl hover:shadow-[#002D62] hover:-mt-2"
           >
             Contact Us
           </Button>
           <Button
             variant="outlined"
             startIcon={<RemoveRedEyeIcon className="w-7 h-7" />}
-            className="w-1/2 h-12 border-[#0066b2] border-2 mx-4 rounded-md text-base font-semibold text-[#0066b2] transition-all hover:bg-[#c9e8ff] hover:shadow-2xl hover:shadow-[#0066b2] hover:border-[#0066b2] hover:border-2 hover:-mt-2"
+            href="#portfolio"
+            className="w-1/2 h-12 border-[#002D62] border-2 mx-4 rounded-md text-base font-semibold text-[#002D62] transition-all hover:bg-[#002e6220] hover:shadow-2xl hover:shadow-[#002D62] hover:border-[#002D62] hover:border-2 hover:-mt-2"
           >
             View Our Projects
           </Button>
@@ -35,7 +37,7 @@ const Hero = () => {
               src={"/profile/taher.jpg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer border-4 border-[#0066b2]"
+              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
             />
           </div>
           <span className="mt-4 font-bold text-xl">Taher</span>
@@ -46,7 +48,7 @@ const Hero = () => {
               src={"/profile/mustafa.jpeg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer -ml-8 border-4 border-[#0066b2]"
+              className="rounded-full shadow-xl cursor-pointer -ml-8 border-4 border-[#002D62]"
             />
           </div>
           <span className="-ml-8 mt-4 font-bold text-xl">Mustafa</span>
