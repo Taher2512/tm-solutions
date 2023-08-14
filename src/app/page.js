@@ -4,7 +4,9 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
-import './globals.css'
+import "./globals.css";
+import ProjectModal from "./components/ProjectModal";
+
 export default function Home() {
   return (
     <main>
@@ -12,9 +14,8 @@ export default function Home() {
       <Hero />
       <About />
       <Portfolio />
-      <Hero />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </main>
   );
 }
