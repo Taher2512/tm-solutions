@@ -14,6 +14,7 @@ module.exports = {
       },
       height: {
         128: "32rem",
+        112: "26rem",
       },
       inset: ["group-hover"],
       transitionDelay: ["group-hover"],

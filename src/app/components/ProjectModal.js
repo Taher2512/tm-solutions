@@ -18,8 +18,11 @@ const style = {
   boxShadow: 24,
   p: 4,
   borderRadius: "10px",
-  // No height peviously
+  // No height previously
   height: "93vh",
+  "@media (max-width: 768px)": {
+    width: "90vw",
+  },
 };
 
 const ProjectModal = ({
@@ -46,7 +49,8 @@ const ProjectModal = ({
 
   const slideElements = new Array(slides).fill(null).map((_, index) => (
     // previously className="h-full"
-    <div style={{ height: "77%" }} key={index}>
+    // height previously - 77%
+    <div style={{ height: "75vh" }} key={index}>
       <img
         src={`/portfolio/${project}/${index + 2}.${ext}`} // Adjust the image source based on your file naming convention
         alt={`project_image_${index}`}
@@ -105,7 +109,7 @@ const ProjectModal = ({
               // showThumbs={false}
               thumbWidth={35}
             >
-              <div style={{ height: "77%" }}>
+              <div style={{ height: "75vh" }}>
                 <img
                   src={`/portfolio/${project}/main.${ext}`} // Adjust the image source based on your file naming convention
                   alt={`project_image_main`}

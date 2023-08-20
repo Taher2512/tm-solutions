@@ -6,41 +6,8 @@ const Nav = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   return (
-    // <Navbar className="fixed w-full z-50 bg-transparent lg:px-24 lg:py-4">
-    //   <Navbar.Brand href="https://flowbite-react.com">
-    //     {/* <img
-    //       alt="Flowbite React Logo"
-    //       className="mr-3 h-6 sm:h-9"
-    //       src="/favicon.svg"
-    //     /> */}
-    //     <span className="whitespace-nowrap text-3xl font-extrabold text-[#002D62]">
-    //       TM Solutions
-    //     </span>
-    //   </Navbar.Brand>
-    //   <Navbar.Toggle />
-    //   <Navbar.Collapse className="lg:bg-transparent lg:backdrop-blur-none lg:border-0 backdrop-blur-2xl bg-white/30 border-2 border-[#002D62] rounded-md mt-0">
-    //     <Navbar.Link
-    //       href="#about"
-    //       className="font-semibold text-base text-[#002D62] border-gray-400"
-    //     >
-    //       About
-    //     </Navbar.Link>
-    //     <Navbar.Link
-    //       href="#portfolio"
-    //       className="font-semibold text-base text-[#002D62] border-gray-400"
-    //     >
-    //       Portfolio
-    //     </Navbar.Link>
-    //     <Navbar.Link
-    //       href="#contact"
-    //       className="font-semibold text-base text-[#002D62] border-gray-400"
-    //     >
-    //       Contact
-    //     </Navbar.Link>
-    //   </Navbar.Collapse>
-    // </Navbar>
     //bg-[#B9D9EB] bg-opacity-50
-    <nav className="bg-[#fff] bg-opacity-25 backdrop-blur-md fixed w-full z-20 top-0 left-0 shadow-">
+    <nav className="bg-opacity-25 backdrop-blur-md fixed w-screen z-20 top-0 left-0 shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
           {/* <img
@@ -71,9 +38,9 @@ const Nav = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLineCap="round"
+                strokeLineJoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>

@@ -4,9 +4,12 @@ import HeaderText from "./HeaderText";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="flex flex-col justify-center px-24">
+    <section
+      id="portfolio"
+      className="flex flex-col justify-center px-24 mb-28"
+    >
       <HeaderText text={"Our Portfolio"} />
-      <div className="grid grid-cols-12 gap-x-8 gap-y-16">
+      <div className="flex flex-col md:grid md:grid-cols-12 md:gap-x-8 gap-y-16">
         <PortfolioCard
           project={"works"}
           ext={"jpg"}

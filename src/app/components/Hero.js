@@ -6,17 +6,17 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="flex items-center align-middle justify-between px-10 min-h-screen">
-      <div className="mx-10">
-        <h1 className="text-[#002D62] text-6xl text-bol font-extrabold leading-snug">
+    <section className="flex flex-col-reverse md:flex-row items-center align-middle justify-center md:justify-between px-0 md:px-10 pt-24 md:pt-0 min-h-screen">
+      <div className="mx-10 pb-16 md:pb-0">
+        <h1 className="text-[#002D62] text-3xl md:text-6xl font-extrabold leading-snug text-center md:text-left mt-8 md:mt-0">
           Unleashing Digital Potential By Crafting High-Converting Apps
         </h1>
-        <div className="flex items-center justify-center mt-10 h-16">
+        <div className="flex flex-col md:flex-row items-center justify-center mt-16 md:mt-10 h-16">
           <Button
             variant="contained"
             startIcon={<CallIcon className="w-7 h-7" />}
             href="#contact"
-            className="w-1/2 h-12 bg-[#002D62] border-[#002D62] hover:bg-[#002D62] border-2 mx-4 rounded-md text-base font-semibold text-[#fff] transition-all  hover:shadow-2xl hover:shadow-[#002D62] hover:-mt-2"
+            className="w-full h-12 md:w-1/2 bg-[#002D62] border-[#002D62] hover:bg-[#002D62] border-2 md:mr-4 rounded-md text-base font-semibold text-[#fff] transition-all  hover:shadow-2xl hover:shadow-[#002D62] md:hover:-mt-2"
           >
             Contact Us
           </Button>
@@ -24,7 +24,7 @@ const Hero = () => {
             variant="outlined"
             startIcon={<RemoveRedEyeIcon className="w-7 h-7" />}
             href="#portfolio"
-            className="w-1/2 h-12 border-[#002D62] border-2 mx-4 rounded-md text-base font-semibold text-[#002D62] transition-all hover:bg-[#002e6220] hover:shadow-2xl hover:shadow-[#002D62] hover:border-[#002D62] hover:border-2 hover:-mt-2"
+            className="w-full h-12 md:w-1/2 mt-4 md:mt-0 border-[#002D62] border-2 md:ml-4 rounded-md text-base font-semibold text-[#002D62] transition-all hover:bg-[#002e6220] hover:shadow-2xl hover:shadow-[#002D62] hover:border-[#002D62] hover:border-2 md:hover:-mt-2"
           >
             View Our Projects
           </Button>
@@ -32,23 +32,23 @@ const Hero = () => {
       </div>
       <div className="flex items-center justify-center">
         <div className="flex flex-col items-center transition-all hover:z-10 hover:scale-110">
-          <div className="flex flex-col relative w-72 h-72">
+          <div className="flex flex-col relative w-44 h-44 md:w-72 md:h-72">
             <Image
               src={"/profile/taher.jpg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
+              className="rounded-full shadow-xl cursor-pointer ml-4 border-4 border-[#002D62]"
             />
           </div>
           <span className="mt-4 font-bold text-xl">Taher</span>
         </div>
         <div className="flex flex-col items-center transition-all hover:z-10 hover:scale-110">
-          <div className="flex flex-col relative w-72 h-72">
+          <div className="flex flex-col relative w-44 h-44 md:w-72 md:h-72">
             <Image
               src={"/profile/mustafa.jpeg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer -ml-8 border-4 border-[#002D62]"
+              className="rounded-full shadow-xl cursor-pointer -ml-4 border-4 border-[#002D62]"
             />
           </div>
           <span className="-ml-8 mt-4 font-bold text-xl">Mustafa</span>
