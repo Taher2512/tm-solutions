@@ -9,9 +9,9 @@ const HeaderText = ({ text }) => {
     target: ref,
     offset: ["start end", "end start"],
   });
-  //   const scaleX = useSpring(scrollYProgress);
-  // const width = useTransform(scaleX, [0, 0.8], ["0%", "100%"]);
-  const width = useTransform(scrollYProgress, [0, 0.8], ["0%", "100%"]);
+  const scaleX = useSpring(scrollYProgress);
+  const width = useTransform(scaleX, [0, 0.8], ["0%", "100%"]);
+  // const width = useTransform(scrollYProgress, [0, 0.8], ["0%", "100%"]);
 
   return (
     <div ref={ref} className="flex flex-col self-center justify-center w-max">

@@ -28,7 +28,7 @@ const Portfolio = () => {
         <PortfolioCard
           project={"works"}
           ext={"jpg"}
-          title={"Works Management Project"}
+          title={"Works Management App"}
         />
         <PortfolioCard
           project={"inventory"}
