@@ -3,6 +3,7 @@ import CallIcon from "@mui/icons-material/Call";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -33,23 +34,30 @@ const Hero = () => {
       <div className="flex items-center justify-center">
         <div className="flex flex-col items-center transition-all hover:z-10 hover:scale-110">
           <div className="flex flex-col relative w-44 h-44 md:w-72 md:h-72">
-            <Image
-              src={"/profile/taher.jpg"}
-              alt="team_photo"
-              fill
-              className="rounded-full shadow-xl cursor-pointer ml-4 border-4 border-[#002D62]"
-            />
+            <Link href={"https://www.linkedin.com/in/taherk18"} target="_blank">
+              <Image
+                src={"/profile/taher.jpg"}
+                alt="team_photo"
+                fill
+                className="rounded-full shadow-xl cursor-pointer ml-4 border-4 border-[#002D62]"
+              />
+            </Link>
           </div>
           <span className="mt-4 font-bold text-xl">Taher</span>
         </div>
         <div className="flex flex-col items-center transition-all hover:z-10 hover:scale-110">
           <div className="flex flex-col relative w-44 h-44 md:w-72 md:h-72">
-            <Image
-              src={"/profile/mustafa.jpeg"}
-              alt="team_photo"
-              fill
-              className="rounded-full shadow-xl cursor-pointer -ml-4 border-4 border-[#002D62]"
-            />
+            <Link
+              href={"https://www.linkedin.com/in/mustafa-chaiwala-7a3890226"}
+              target="_blank"
+            >
+              <Image
+                src={"/profile/mustafa.jpeg"}
+                alt="team_photo"
+                fill
+                className="rounded-full shadow-xl cursor-pointer -ml-4 border-4 border-[#002D62]"
+              />
+            </Link>
           </div>
           <span className="-ml-8 mt-4 font-bold text-xl">Mustafa</span>
         </div>

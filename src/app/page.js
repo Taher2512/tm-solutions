@@ -1,11 +1,9 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import "./globals.css";
-import ProjectModal from "./components/ProjectModal";
 import Footer2 from "./components/Footer2";
 
 export default function Home() {
