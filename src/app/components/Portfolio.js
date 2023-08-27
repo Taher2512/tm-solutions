@@ -26,20 +26,20 @@ const Portfolio = () => {
           title={"Hackathon Project"}
         />
         <PortfolioCard
-          project={"works"}
-          ext={"jpg"}
-          title={"Works Management App"}
+          project={"jobs"}
+          ext={"jpeg"}
+          title={"Jobs Search App"}
         />
         <PortfolioCard
-          project={"inventory"}
+          project={"food"}
           ext={"jpg"}
-          title={"Inventory Management App"}
+          title={"Food Delivery App"}
         />
-        <PortfolioCard
+        {/* <PortfolioCard
           project={"hackathon"}
           ext={"jpeg"}
           title={"Hackathon Project"}
-        />
+        /> */}
       </div>
     </section>
   );
