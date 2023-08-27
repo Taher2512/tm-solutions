@@ -87,14 +87,7 @@ const About = () => {
             </div>
           </div>
           <span className="col-span-12 md:col-span-8 mx-6 md:mx-0 text-justify border-4 border-[#002D62] rounded-md p-8 font-semibold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            tincidunt velit nunc, sed ultricies tellus interdum vitae.
-            Suspendisse potenti. Sed efficitur magna nisl, at varius mauris
-            ultricies non. Morbi feugiat risus sed ex varius dapibus. Maecenas
-            faucibus blandit ipsum nec maximus. Nulla sodales aliquet elit.
-            Fusce aliquam massa quam, eu venenatis augue ultricies in. Morbi sit
-            amet mollis nulla, eu sollicitudin sem. Quisque sed tellus non ex
-            aliquet malesuada.
+          Enthusiastic and skilled Android and Backend Developer with a passion for crafting dynamic digital solutions that seamlessly integrate frontend elegance with backend functionality. With a strong foundation in mobile application development and server-side architecture, I bring to the table a wealth of technical expertise that drives the creation of innovative and user-centric software experiences.
           </span>
           {/* Arrow Left */}
           <div className="hidden md:block col-span-4">
