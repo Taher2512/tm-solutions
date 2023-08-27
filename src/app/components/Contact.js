@@ -6,6 +6,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import CallIcon from "@mui/icons-material/Call";
+
 export default function Contact() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();

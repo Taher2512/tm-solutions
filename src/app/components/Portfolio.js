@@ -16,19 +16,9 @@ const Portfolio = () => {
           title={"Works Management App"}
         />
         <PortfolioCard
-          project={"inventory"}
+          project={"food"}
           ext={"jpg"}
-          title={"Inventory Management App"}
-        />
-        <PortfolioCard
-          project={"hackathon"}
-          ext={"jpeg"}
-          title={"Hackathon Project"}
-        />
-        <PortfolioCard
-          project={"works"}
-          ext={"jpg"}
-          title={"Works Management App"}
+          title={"Food Delivery App"}
         />
         <PortfolioCard
           project={"inventory"}
@@ -36,10 +26,20 @@ const Portfolio = () => {
           title={"Inventory Management App"}
         />
         <PortfolioCard
+          project={"jobs"}
+          ext={"jpeg"}
+          title={"Jobs Search App"}
+        />
+        <PortfolioCard
           project={"hackathon"}
           ext={"jpeg"}
           title={"Hackathon Project"}
         />
+        {/* <PortfolioCard
+          project={"hackathon"}
+          ext={"jpeg"}
+          title={"Hackathon Project"}
+        /> */}
       </div>
     </section>
   );

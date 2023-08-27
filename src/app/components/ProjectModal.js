@@ -44,6 +44,10 @@ const ProjectModal = ({
       setSlides(5);
     } else if (project == "hackathon") {
       setSlides(6);
+    } else if (project == "jobs") {
+      setSlides(3);
+    } else if (project == "food") {
+      setSlides(5);
     }
   }, [project]);
 

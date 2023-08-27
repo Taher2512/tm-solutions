@@ -1,18 +1,95 @@
+"use client";
+
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import CallIcon from "@mui/icons-material/Call";
 import { Button } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
 
 const Hero = () => {
+  const [loading, setLoading] = useState(true);
+
+  const text = "Unleashing Digital Potential By Crafting High-Converting Apps";
+
+  const ctrls = useAnimation();
+
+  const wordAnimation = {
+    hidden: {},
+    visible: {},
+  };
+
+  const characterAnimation = {
+    hidden: {
+      opacity: 0,
+      y: `0.25em`,
+    },
+    visible: {
+      opacity: 1,
+      y: `0em`,
+      transition: {
+        duration: 1,
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    },
+  };
+
+  useEffect(() => {
+    setLoading(false);
+    ctrls.start("visible");
+  }, []);
+
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center align-middle justify-center md:justify-between px-0 md:px-10 pt-24 md:pt-0 min-h-screen">
-      <div className="mx-10 pb-16 md:pb-0">
-        <h1 className="text-[#002D62] text-3xl md:text-6xl font-extrabold leading-snug text-center md:text-left mt-8 md:mt-0">
-          Unleashing Digital Potential By Crafting High-Converting Apps
-        </h1>
-        <div className="flex flex-col md:flex-row items-center justify-center mt-16 md:mt-10 h-16">
+    <section className="flex flex-col-reverse md:flex-row items-center align-middle justify-center md:justify-between mb-12 px-0 md:px-10 pt-24 md:pt-0 min-h-screen">
+      {loading && (
+        <div className="absolute h-full w-full flex items-center justify-center">
+          <div className="relative h-20 w-20">
+            <Image src="/images/loading.svg" alt="Loading..." fill />
+          </div>
+        </div>
+      )}
+      <motion.div className="mx-10 mt-7 pb-10 md:pb-0 text-center md:text-left">
+        {text.split(" ").map((word, wordIndex) => {
+          return (
+            <motion.span
+              aria-hidden="true"
+              key={wordIndex}
+              initial="hidden"
+              animate={ctrls}
+              variants={wordAnimation}
+              transition={{
+                delayChildren: wordIndex * 0.25,
+                staggerChildren: 0.05,
+              }}
+              className="text-[#002D62] text-3xl md:text-6xl font-extrabold leading-snug text-center md:text-left md:mt-0 inline-block whitespace-pre-wrap"
+            >
+              {word.split("").map((character, charIndex) => {
+                return (
+                  <motion.span
+                    aria-hidden="true"
+                    key={charIndex}
+                    variants={characterAnimation}
+                    className="inline-block"
+                  >
+                    {character}
+                  </motion.span>
+                );
+              })}
+              {wordIndex < text.split(" ").length - 1 && " "}
+            </motion.span>
+          );
+        })}
+        <motion.div
+          className="flex flex-col md:flex-row items-center justify-center mt-12 md:mt-10 h-16"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1.5,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
           <Button
             variant="contained"
             startIcon={<CallIcon className="w-7 h-7" />}
@@ -29,9 +106,18 @@ const Hero = () => {
           >
             View Our Projects
           </Button>
-        </div>
-      </div>
-      <div className="flex items-center justify-center">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className="flex items-center justify-center"
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
         <div className="flex flex-col items-center transition-all hover:z-10 hover:scale-110">
           <div className="flex flex-col relative w-44 h-44 md:w-72 md:h-72">
             <Link href={"https://www.linkedin.com/in/taherk18"} target="_blank">
@@ -61,7 +147,7 @@ const Hero = () => {
           </div>
           <span className="-ml-8 mt-4 font-bold text-xl">Mustafa</span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
