@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
 import HeaderText from "./HeaderText";
@@ -11,14 +11,14 @@ const About = () => {
       <HeaderText text={"About Us"} />
       <div className="px-0 md:px-52 py-16">
         <div className="grid justify-items-center md:justify-items-stretch grid-cols-12 gap-4">
-          <div className="relative col-span-12 md:col-span-3 w-64 h-64">
+          <motion.div className="relative col-span-12 md:col-span-3 w-64 h-64">
             <Image
               src={"/profile/taher.jpg"}
               alt="team_photo"
               fill
               className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
             />
-          </div>
+          </motion.div>
           <div className="col-span-12 md:col-span-9 flex items-center">
             <span className="text-3xl md:text-4xl font-bold text-[#002D62]">
               Taher Khasamwala

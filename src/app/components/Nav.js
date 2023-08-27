@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Nav = () => {
@@ -10,12 +11,10 @@ const Nav = () => {
     <nav className="bg-opacity-25 backdrop-blur-md fixed w-screen z-20 top-0 left-0 shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
-          {/* <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
-          /> */}
-          <span className="self-center font-extrabold text-3xl whitespace-nowrap text-[#002D62]">
+          <div className="relative h-10 w-10 mr-3">
+            <Image src="/logos/logo2.png" alt="Logo" fill />
+          </div>
+          <span className="self-center font-bold text-3xl whitespace-nowrap text-[#002D62]">
             TM Solutions
           </span>
         </a>
