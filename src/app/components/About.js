@@ -99,6 +99,7 @@ const About = () => {
             </div>
           </div>
           <span className="col-span-12 md:col-span-8 mx-6 md:mx-0 text-justify border-4 border-[#002D62] rounded-md p-8 font-semibold">
+
           Hello! I'm a tech enthusiast who loves making cool things happen on your phone. You know those apps you tap on every day? Yep, I'm the one behind the scenes, creating them. I use special codes to design buttons, screens, and all the fun stuff you see. My goal is to make your apps look great and work smoothly, so you have a fantastic experience every time you use them.
           <br/>
           <br/>
