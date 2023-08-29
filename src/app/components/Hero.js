@@ -122,10 +122,10 @@ const Hero = () => {
           <div className="flex flex-col relative w-44 h-44 md:w-72 md:h-72">
             <Link href={"https://www.linkedin.com/in/taherk18"} target="_blank">
               <Image
-                src={"/profile/taher.jpg"}
+                src={"/profile/taher2.jpg"}
                 alt="team_photo"
                 fill
-                className="rounded-full shadow-xl cursor-pointer ml-4 border-4 border-[#002D62]"
+                className="rounded-full shadow-xl cursor-pointer ml-4 border-4 border-[#002D62] object-cover"
               />
             </Link>
           </div>
@@ -138,10 +138,10 @@ const Hero = () => {
               target="_blank"
             >
               <Image
-                src={"/profile/mustafa.jpeg"}
+                src={"/profile/mustafa2.jpeg"}
                 alt="team_photo"
                 fill
-                className="rounded-full shadow-xl cursor-pointer -ml-4 border-4 border-[#002D62]"
+                className="rounded-full shadow-xl cursor-pointer -ml-4 border-4 border-[#002D62] object-cover"
               />
             </Link>
           </div>

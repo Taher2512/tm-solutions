@@ -13,10 +13,10 @@ const About = () => {
         <div className="grid justify-items-center md:justify-items-stretch grid-cols-12 gap-4">
           <motion.div className="relative col-span-12 md:col-span-3 w-64 h-64">
             <Image
-              src={"/profile/taher.jpg"}
+              src={"/profile/taher2.jpg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
+              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62] object-cover"
             />
           </motion.div>
           <div className="col-span-12 md:col-span-9 flex items-center">
@@ -76,10 +76,10 @@ const About = () => {
           </div>
           <div className="col-span-12 md:col-span-3 relative w-64 h-64 flex justify-end">
             <Image
-              src={"/profile/mustafa.jpeg"}
+              src={"/profile/mustafa2.jpeg"}
               alt="team_photo"
               fill
-              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62]"
+              className="rounded-full shadow-xl cursor-pointer border-4 border-[#002D62] object-cover"
             />
           </div>
           {/* Name For Mobile */}
