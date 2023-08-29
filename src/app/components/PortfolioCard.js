@@ -58,7 +58,7 @@ const PortfolioCard = ({ project, ext, title }) => {
       <div className="relative group h-112 md:h-128 col-span-4 mt-12 flex items-center justify-center cursor-pointer">
         <div className="flex justify-center h-full">
           {/* md:group-hover:-rotate-12 */}
-          <div className="w-52 h-112 md:w-64 md:h-128 transform transition-all group-hover:delay-200 delay-100 absolute  group-hover:-rotate-12 md:group-hover:rotate-0 group-hover:mr-16 md:group-hover:mr-0 md:group-hover:-ml-56 md:group-hover:mt-10 group-hover:-mt-4 rounded-lg">
+          <div className="w-52 h-112 md:w-64 md:h-128 transform transition-all group-hover:delay-200 delay-100 absolute  group-hover:-rotate-12 md:group-hover:rotate-0 group-hover:mr-20 md:group-hover:mr-0 md:group-hover:-ml-56 md:group-hover:mt-10 group-hover:-mt-4 rounded-lg">
             <Image
               src={`/portfolio/${project}/3.${ext}`}
               alt="portfolio_image"
