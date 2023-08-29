@@ -18,7 +18,7 @@ export default function Contact() {
       alert("All marked fields are required");
     } else {
       setLoader(true);
-      fetch("http://localhost:3000/api/contact", {
+      fetch("https://tm-solutions-ten.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
