@@ -138,7 +138,7 @@ const Hero = () => {
               target="_blank"
             >
               <Image
-                src={"/profile/mustafa.jpeg"}
+                src={"/profile/mustafa2.jpeg"}
                 alt="team_photo"
                 fill
                 className="rounded-full shadow-xl cursor-pointer -ml-4 border-4 border-[#002D62]"

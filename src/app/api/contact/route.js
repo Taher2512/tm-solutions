@@ -7,6 +7,7 @@ export async function POST(request){
     const {name,email,subject,description}=await request.json()
     console.log("name",name)
     await connectDB()
-    await UserQuery.create({name,email,subject,description})
+    const date=new Date()
+    await UserQuery.create({name,email,subject,description,date})
     return NextResponse.json({"message":"Done successfully"})
 }
