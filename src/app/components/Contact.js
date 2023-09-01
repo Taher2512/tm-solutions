@@ -18,6 +18,7 @@ export default function Contact() {
       alert("All marked fields are required");
     } else {
       setLoader(true);
+
       fetch("https://tm-solutions-ten.vercel.app/api/contact", {
         method: "POST",
         headers: {

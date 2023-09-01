@@ -58,7 +58,7 @@ const PortfolioCard = ({ project, ext, title }) => {
       <div className="relative group h-112 md:h-128 col-span-4 mt-12 flex items-center justify-center cursor-pointer">
         <div className="flex justify-center h-full">
           {/* md:group-hover:-rotate-12 */}
-          <div className="w-52 h-112 md:w-64 md:h-128 transform transition-all group-hover:delay-200 delay-100 absolute  group-hover:-rotate-12 md:group-hover:rotate-0 group-hover:mr-20 md:group-hover:mr-0 md:group-hover:-ml-56 md:group-hover:mt-10 group-hover:-mt-4 rounded-lg">
+          <div className="w-52 h-96 md:w-64 md:h-128 transform transition-all group-hover:delay-200 delay-100 absolute  group-hover:-rotate-12 md:group-hover:rotate-0 group-hover:mr-16 md:group-hover:mr-0 md:group-hover:-ml-56 md:group-hover:mt-10 group-hover:-mt-4 rounded-lg">
             <Image
               src={`/portfolio/${project}/3.${ext}`}
               alt="portfolio_image"
@@ -67,7 +67,7 @@ const PortfolioCard = ({ project, ext, title }) => {
             />
           </div>
           {/* md:group-hover:-rotate-6 */}
-          <div className="w-52 h-112 md:w-64 md:h-128 transform transition-all group-hover:delay-100 delay-300 absolute group-hover:rotate-12 md:group-hover:rotate-0 group-hover:ml-20 md:group-hover:-ml-28 md:group-hover:mt-5 group-hover:-mt-4 rounded-lg">
+          <div className="w-52 h-96 md:w-64 md:h-128 transform transition-all group-hover:delay-100 delay-300 absolute group-hover:rotate-12 md:group-hover:rotate-0 group-hover:ml-20 md:group-hover:-ml-28 md:group-hover:mt-5 group-hover:-mt-4 rounded-lg">
             <Image
               src={`/portfolio/${project}/2.${ext}`}
               alt="portfolio_image"
@@ -75,8 +75,8 @@ const PortfolioCard = ({ project, ext, title }) => {
               className="rounded-lg shadow-2xl"
             />
           </div>
-          <div className="w-52 h-112 md:w-64 md:h-128 flex justify-center items-center border-2 border-[#002D62] transform transition-all absolute rounded-lg">
-            <div className="flex items-center justify-center w-52 h-112 md:w-64 md:h-128 bg-black z-10 transform rounded-lg bg-opacity-0 group-hover:bg-opacity-40 ease-in-out duration-300">
+          <div className="w-52 h-96 md:w-64 md:h-128 flex justify-center items-center border-2 border-[#002D62] transform transition-all absolute rounded-lg">
+            <div className="flex items-center justify-center w-52 h-96 md:w-64 md:h-128 bg-black z-10 transform rounded-lg bg-opacity-0 group-hover:bg-opacity-40 ease-in-out duration-300">
               <div className="hidden group-hover:block">
                 <Button
                   variant="outlined"
@@ -95,7 +95,7 @@ const PortfolioCard = ({ project, ext, title }) => {
               className="rounded-lg shadow-2xl"
             />
           </div>
-          <div class="h-96 md:h-112 flex justify-end items-end transform transition-all my-24 md:my-12 text-center md:group-hover:mt-20 group-hover:delay-75 delay-300 -z-10">
+          <div class="h-96 md:h-128 flex justify-end items-end transform transition-all my-20 md:my-12 text-center md:group-hover:mt-20 group-hover:delay-75 delay-300 -z-10">
             <span className="font-bold text-lg text-[#002D62]">{title}</span>
           </div>
         </div>
